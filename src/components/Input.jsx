@@ -1,10 +1,11 @@
 import React from 'react'
 
-export const Input = ({ name, defmin,handleValues,values }) => {
+export const Input = ({ name, defmin,handleValues,values,beZero }) => {
+  const inputClassName = `input-${name} ${name === 'people' && beZero ? 'input-invalid' : ''}`;
   return (
     <>
       <label htmlFor={`input-${name}`}>
-        <input className={`input-${name}`} id={`input-${name}`} type="number" name={name} value={values[name]}  min={defmin} onChange={handleValues}/>
+        <input className={inputClassName} id={`input-${name}`} type="number" name={name} value={values[name]}  min={defmin} onChange={handleValues}/>
         </label>
 
 

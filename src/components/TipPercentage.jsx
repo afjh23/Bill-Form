@@ -6,7 +6,7 @@ export const TipPercentage = ({handleValues,values}) => {
         <>
 
             {options.map(tp =>
-                <li id="percentage-5" key={tp}>
+                <li id={`percentage-${tp}`} key={tp}>
                     <button type="button" name="tip" onClick={handleValues} className={`percentage-button ${values.tip === tp && 'active'}`} value={tp}>{tp}%</button>
                 </li>
             )}

@@ -26,6 +26,7 @@ export const BillForm = ({values, inputValue, handleValues, beZero, disabled}) =
       defmin={1}
       handleValues={handleValues}
       values={values}
+      beZero={beZero} 
       
       />
     </div>

@@ -183,4 +183,6 @@ input:focus {
   border: 2px solid orangered;
 }
 
- 
+.reset-button.disabled{
+  background-color: #0d686d;
+ }
